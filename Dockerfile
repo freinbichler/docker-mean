@@ -1,4 +1,4 @@
-FROM iojs:latest
+FROM mhart/alpine-iojs:latest
 
 RUN mkdir -p /app
 WORKDIR /app
