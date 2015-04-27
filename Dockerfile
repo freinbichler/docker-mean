@@ -4,7 +4,7 @@ RUN mkdir -p /app
 WORKDIR /app
 
 COPY package.json /app/
-COPY ./app /app
+COPY ./dist /app
 RUN npm install --production
 
 ENV NODE_ENV production
