@@ -5,7 +5,7 @@ var app = express();
 var server = require('http').createServer(app);
 var morgan = require('morgan');
 var compression = require('compression');
-var io = require('socket.io')(server);
+var io = require('socket.io')(server, {path: '/docker-mean/socket.io'});
 
 app.enable('trust proxy');
 
